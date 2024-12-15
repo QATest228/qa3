@@ -39,7 +39,7 @@ public class TestBoxes {
         $("#userForm #subjectsInput").setValue("Arts");
         $("#userForm .subjects-auto-complete__menu").click();
         $("#hobbiesWrapper").$(byText("Sports")).click();
-        $("#uploadPicture").uploadFile(new File("C:/Users/Vaqif/IdeaProjects/qa_quru/QA3UROK/src/test/resources/orig.png.jpg"));
+        $("#uploadPicture").uploadFromClasspath("orig.png.jpg");
         $("#currentAddress").setValue("Poland,Krakow");
         $("#react-select-3-input").setValue("Haryana").pressEnter();
         $("#react-select-4-input").setValue("Karnal").pressEnter();
